@@ -65,14 +65,7 @@ function createAllQuestions(q) {
         if (lastQuestionCard) {
             lastQuestionCard.addEventListener('click', () => {
                 document.getElementById("anim").style.display = "block";
-                document.querySelector(".alleSprøsmål").style.opacity = 0; 
-
-            
-                
-                lineText.forEach(function (element1) {
-                    element1.style.fontSize = "40px";
-                    element1.style.transform = "translate(-150px,-50px)";
-                });             
+                document.querySelector(".alleSprøsmål").style.opacity = 0;            
             });
         }
     }
