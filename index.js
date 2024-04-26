@@ -66,29 +66,13 @@ function createAllQuestions(q) {
             lastQuestionCard.addEventListener('click', () => {
                 document.getElementById("anim").style.display = "block";
                 document.querySelector(".alleSprøsmål").style.opacity = 0; 
-                var lineText = document.querySelectorAll(".line-text");
-                var lineElements = document.querySelectorAll(".Line");
-                var newGap = "35px";
+
             
-                // Apply the new gap to each Line element
-                lineElements.forEach(function (element) {
-                    element.style.transition = "margin-bottom 1s ease"; 
-                    element.style.height = "30px"
-                    element.style.borderRadius = "6px"
-                    element.style.marginBottom = newGap;
-                });
                 
                 lineText.forEach(function (element1) {
                     element1.style.fontSize = "40px";
                     element1.style.transform = "translate(-150px,-50px)";
-                });
-            
-                // let tryA = document.querySelector(".anim");
-                // document.addEventListener("mousemove", function(event) {
-                //     let Y = event.clientY;
-                //     let X = event.clientX;
-                //     tryA.style.left = X * 0.2 +'px'
-                // })                 
+                });             
             });
         }
     }
@@ -160,25 +144,24 @@ const questions = [
             {
                 text: 'Hvis elever er dumme nokk til å svare og gi oss kreditt informasjonen, så er det deres feil',
                 points: ()=>  {
-                    
+                    Ja -= 1
                 }
             },
             {
                 text: 'Skolen må gi tydelig informasjon til elevene og personalet om hvordan deres personopplysninger behandles.',
                 points: ()=>  {
-                    
                 }
             },
             {
                 text: 'L',
                 points: ()=>  {
-                    
+                    Ja -= 1
                 }
             },
             {
                 text: 'Vet ikke',
                 points: ()=>  {
-                    
+                    Ja -= 1
                 }
             },
         ], 
@@ -189,7 +172,7 @@ const questions = [
             {
                 text: 'Det vi vil',
                 points: ()=>  {
-                    
+                    Ja -= 1
                 }
             },
             {
@@ -201,13 +184,13 @@ const questions = [
             {
                 text: 'Det vi som skole har lyst til',
                 points: ()=>  {
-                    
+                    Ja -= 1
                 }
             },
             {
                 text: 'Vet ikke',
                 points: ()=>  {
-                    
+                    Ja -= 1
                 }
             },
         ], 
@@ -218,13 +201,13 @@ const questions = [
             {
                 text: 'Egt ikke fordi vi er en skole',
                 points: ()=>  {
-                    
+                    Ja -= 1 
                 }
             },
             {
                 text: 'Det er opp til skolen',
                 points: ()=>  {
-                    
+                    Ja -= 1
                 }
             },
             {
@@ -236,7 +219,7 @@ const questions = [
             {
                 text: 'Vet ikke',
                 points: ()=>  {
-                    
+                    Ja -= 1
                 }
             },
         ], 
